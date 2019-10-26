@@ -1,5 +1,5 @@
 
-# Yorg3 Modding Wiki
+# YORG.io 3 Modding Wiki
 ## Example Mods
 [Bigger Map Mod](https://github.com/TristonStuart/Yorg3-Mod-Tools/tree/master/Example%20Mods/Bigger%20Map%20Mod "Bigger Map Mod") <br>
 [No Fog Mod](https://github.com/TristonStuart/Yorg3-Mod-Tools/tree/master/Example%20Mods/No%20Fog%20Mod "No Fog Mod") <br>

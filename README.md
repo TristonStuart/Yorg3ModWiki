@@ -20,13 +20,16 @@ You are probably wondering how to host your mod file at that address. <br> You c
 Node.js File Server : https://github.com/TristonStuart/Yorg3-Mod-Tools/tree/master/Mod.js%20File%20Server%20(nodejs)/ (Recomended)
 
 Python File Server : https://github.com/tobspr/yorg.io-3-modding-docs/blob/master/sample_mod/mod_testing_server.py
-## [Mod Build](https://github.com/dengr1065/modbuild "Mod Build")
-**[Mod Build](https://github.com/dengr1065/modbuild "Mod Build") is a custom mod loader for mod developers.**
+## [ModBuild](https://github.com/dengr1065/modbuild "ModBuild")
+**[ModBuild](https://github.com/dengr1065/modbuild "ModBuild") is a custom mod loader for mod developers.**
 
 **It can :**
-* Inject Multiple Mods At Once
+* Merge multiple mod files into one
+* Supports plugins
+* Supports AML api
+* Push mod projects to publishable mod
 
-Mod Build is specifically designed for mod developers, to help make the creation of mods easier.
+ModBuild is specifically designed for mod developers, to help make the creation of mods easier.
 ## Code Snippets / Examples
 ### Getting app
 The app var is important for editing anything outside of the game variables. <br> Getting it is different across released and beta (as of 10/25/19), so 2 methods are shown. <br> The api variable must be accessible.
@@ -164,4 +167,3 @@ Ran : When a structure is enhanced (not upgraded) <br> Args : [EntityMeta]
 Ran : When a structure is placed <br> Args : [BuildingMeta]
 #### structureUpgraded
 Ran : When a structure is upgraded <br> Args : [BuildingMeta, UpgradeMeta]
-

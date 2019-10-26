@@ -127,3 +127,50 @@ Ran : When an entity is destroyed <br> Args : [EntityMeta]
 Ran : When an entity gets a new component <br> Args : [EntityMeta]
 #### entityQueuedForDestroy
 Ran : Before an entity is destroyed <br> Args : [EntityMeta]
+#### fullGameResync
+Ran : (Not known - Might only be used in MP) <br> Args : Unknown
+#### gameOver
+Ran : When game ends <br> Args : None
+#### gameRejectedFromServer
+Ran : (Not known - Invalid sync token / anticheat or mods) <br> Args : Unknown
+#### gameRestored
+Ran : When game is restored from sync <br> Args : None
+#### gameSaved
+Ran : (Not known) <br> Args : Unknown
+#### gameSyncedWithServer
+Ran : When game is synced with server <br> Args : None
+#### mapThemeLoaded
+Ran : When map theme is fully loaded <br> Args : None
+#### modDrawScreenSpace
+Ran : Every frame <br> Args : [DrawParameters (Canvas - Mod Ui, Root, Zoom)]
+#### modDrawWorldSpace
+Ran : When rendering at world space <br> Args : [DrawParameters (Canvas, Root, Zoom)]
+#### modUpdateTick
+Ran : Every tick <br> Args : None
+#### newlyUnlockedBuildingsChanged
+Ran : When new building is unlocked <br> Args : [SpecificDataArray (Building Name)]
+#### performAsync
+Ran : When the code needs to use async <br> Args : [CallBackFunction?, Name]
+#### postLoadHook
+Ran : After game is loaded <br> Args : None
+#### readyToRender
+Ran : When game is ready to render <br> Args : None
+#### requireRoutingUpdate
+Ran : When game needs to make a routing update <br> Args : None
+#### resized
+Ran : When window is resized <br> Args : [Width, Height]
+#### skillsChanged
+Ran : When the skills are changed <br> Args : None
+#### streetDestroyed
+Ran : Never (There is nothing using this signal and it is never called) <br> Args : Unknown
+#### streetPlaced
+Ran : (Not known) <br> Args : Unknown
+#### structureDestroyed
+Ran : When a structure is destroyed <br> Args : [BuildingMeta]
+#### structureEnhanced
+Ran : When a structure is enhanced (not upgraded) <br> Args : [EntityMeta]
+#### structurePlaced
+Ran : When a structure is placed <br> Args : [BuildingMeta]
+#### structureUpgraded
+Ran : When a structure is upgraded <br> Args : [BuildingMeta, UpgradeMeta]
+

@@ -20,7 +20,7 @@ You are probably wondering how to host your mod file at that address. <br> You c
 Node.js File Server : https://github.com/TristonStuart/Yorg3-Mod-Tools/tree/master/Mod.js%20File%20Server%20(nodejs)/ (Recomended)
 
 Python File Server : https://github.com/tobspr/yorg.io-3-modding-docs/blob/master/sample_mod/mod_testing_server.py
-## [Advanced Mod Loader (AML)](https://github.com/TristonStuart/AdvancedModLoader/tree/master "Advanced Mod Loader (AML)")
+## [Mod Builder](https://github.com/TristonStuart/AdvancedModLoader/tree/master "Advanced Mod Loader (AML)")
 **[AML](https://github.com/TristonStuart/AdvancedModLoader/tree/master "AML") is a custom mod loader for the mod developers.**
 
 **It can :**
@@ -110,9 +110,20 @@ root.signals.postLoadHook.add(function(){
   console.log('Game has fully loaded!');
 });
 ```
----
-**About The Signals :** 
+### About The Signals :
 #### aboutToDestruct
 Ran : Before playerBase is destroyed <br> Args : None
 #### consumerPrioManuallyChanged
-Ran : When building resource priority is changed <br> Args : 
+Ran : When building resource priority is changed <br> Args : [BuildingMeta]
+#### damageDispatched
+Ran : When Zombie Attacks Something <br> Args : [SpecificData (instaKill info), EntityMeta]
+#### dayNightChanged
+Ran : When day / night changes <br> Args : None
+#### entityAdded
+Ran : When an entity is created <br> Args : [EntityMeta]
+#### entityDestroyed
+Ran : When an entity is destroyed <br> Args : [EntityMeta]
+#### entityGotNewComponent
+Ran : When an entity gets a new component <br> Args : [EntityMeta]
+#### entityQueuedForDestroy
+Ran : Before an entity is destroyed <br> Args : [EntityMeta]

@@ -19,7 +19,7 @@ You are probably wondering how to host your mod file at that address. <br> You c
 ## File Hosting Servers
 Node.js File Server : https://github.com/TristonStuart/Yorg3-Mod-Tools/tree/master/Mod.js%20File%20Server%20(nodejs)/ (Recomended)
 
-Python FIle Server : https://github.com/tobspr/yorg.io-3-modding-docs/blob/master/sample_mod/mod_testing_server.py
+Python File Server : https://github.com/tobspr/yorg.io-3-modding-docs/blob/master/sample_mod/mod_testing_server.py
 ## [Advanced Mod Loader (AML)](https://github.com/TristonStuart/AdvancedModLoader/tree/master "Advanced Mod Loader (AML)")
 **[AML](https://github.com/TristonStuart/AdvancedModLoader/tree/master "AML") is a custom mod loader for the mod developers.**
 
@@ -110,3 +110,9 @@ root.signals.postLoadHook.add(function(){
   console.log('Game has fully loaded!');
 });
 ```
+---
+**About The Signals :** 
+#### aboutToDestruct
+Ran : Before playerBase is destroyed <br> Args : None
+#### consumerPrioManuallyChanged
+Ran : When building resource priority is changed <br> Args : 

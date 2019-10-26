@@ -2,7 +2,7 @@
 ## Example Mods
 [Bigger Map Mod](https://github.com/TristonStuart/Yorg3-Mod-Tools/tree/master/Example%20Mods/Bigger%20Map%20Mod "Bigger Map Mod")
 
-[No Fog Mod](https://github.com/TristonStuart/Yorg3-Mod-Tools/tree/master/Example%20Mods/No%20Fog%20Mod "No Fog Mod")
+[No Fog Mod](https://github.com/TristonStuart/Yorg3-Mod-Tools/tree/master/Example%20Mods/No%20Fog%20Mod "No Fog Mod") <br>
 [Better Zombie Spawning](https://github.com/TristonStuart/Yorg3-Mod-Tools/tree/master/Example%20Mods/Better%20Zombie%20Spawning "Better Zombie Spawning")
 
 [More Zoom Mod](https://github.com/TristonStuart/Yorg3-Mod-Tools/tree/master/Example%20Mods/More%20Zoom "More Zoom Mod")

@@ -61,8 +61,8 @@ You will only need to register one mod function per mod.
 The api variable is used for registering your mod implementation (check below) and also is your link to everything outside the game environment (aka main menu, settings, user details, and more).
 ```javascript
 function myMod(api){
-	console.log('I got the api!');
-	console.log(api);
+  console.log('I got the api!');
+  console.log(api);
 }
 window.registerMod(myMod);
 ```
@@ -70,11 +70,11 @@ window.registerMod(myMod);
 Unlike when registering your mod to get the api (check above), your mod implementation will run everytime a game is started and will pass you the game variables through "root". Any mod that wants to interact with the game will need to register a mod implementation.
 ```javascript
 function myMod(api){
-	console.log('myMod is registered!');
-	function modImplementation(root){
-		console.log('Game has started! Got root!');
-	}
-	api.registerModImplementation(modImplementation);
+  console.log('myMod is registered!');
+  function modImplementation(root){
+    console.log('Game has started! Got root!');
+  }
+  api.registerModImplementation(modImplementation);
 }
 window.registerMod(myMod);
 ```

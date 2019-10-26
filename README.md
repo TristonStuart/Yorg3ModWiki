@@ -15,7 +15,7 @@ https://beta.yorg3.io/?xdev_modDeveloper=1
 
 This version is needed to install custom mods. <br> It will check for a mod file at http://localhost:8000/mod.js
 
-You are probably wondering how to host your mod file at that adress. <br> You can either make a file hosting server or use one of the ones that have already been made (Check below this).
+You are probably wondering how to host your mod file at that address. <br> You can either make a file hosting server or use one of the ones that have already been made (Check below this).
 ## File Hosting Servers
 Node.js File Server : https://github.com/TristonStuart/Yorg3-Mod-Tools/tree/master/Mod.js%20File%20Server%20(nodejs)/ (Recomended)
 

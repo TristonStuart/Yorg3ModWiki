@@ -1,3 +1,4 @@
+
 # Yorg3 Modding Wiki
 ## Example Mods
 [Bigger Map Mod](https://github.com/TristonStuart/Yorg3-Mod-Tools/tree/master/Example%20Mods/Bigger%20Map%20Mod "Bigger Map Mod") <br>
@@ -9,15 +10,12 @@
 ## Getting Started
 Getting started can be tricky!
 
-The first thing you will need is the mod developer version of the game.
-To get the mod dev version of the game use this link :
+The first thing you will need is the mod developer version of the game. <br> To get the mod dev version of the game use this link :
 https://beta.yorg3.io/?xdev_modDeveloper=1
 
-This version is needed to install custom mods.
-It will check for a mod file at http://localhost:8000/mod.js
+This version is needed to install custom mods. <br> It will check for a mod file at http://localhost:8000/mod.js
 
-You are probably wondering how to host your mod file at that adress.
-You can either make a file hosting server or use one of the ones that have already been made (Check below this).
+You are probably wondering how to host your mod file at that adress. <br> You can either make a file hosting server or use one of the ones that have already been made (Check below this).
 ## File Hosting Servers
 Node.js File Server : https://github.com/TristonStuart/Yorg3-Mod-Tools/tree/master/Mod.js%20File%20Server%20(nodejs)/ (Recomended)
 
@@ -37,13 +35,10 @@ Python FIle Server : https://github.com/tobspr/yorg.io-3-modding-docs/blob/maste
 * Combine Multiple Mods Into One File
 * Compile Mods And APIs Into Publishable Mod
 
-AML is specifically designed for mod developers, to help make the creation of mods easier.
-AML has many features to help with easier creation of large and small mods but also has tools that allow 
+AML is specifically designed for mod developers, to help make the creation of mods easier. <br> AML has many features to help with easier creation of large and small mods but also has tools that allow 
 ## Code Snippets / Examples
 ### Getting app
-The app var is important for editing anything outside of the game variables.
-Getting it is different across released and beta (as of 10/25/19), so 2 methods are shown.
-The api variable must be accessible.
+The app var is important for editing anything outside of the game variables. <br> Getting it is different across released and beta (as of 10/25/19), so 2 methods are shown. <br> The api variable must be accessible.
 ```javascript
 function getApp(api){return api.app;}
 var app = api.app;
@@ -53,9 +48,7 @@ function getAppOld(api){return api.exportedVariables.Loader.app;}
 var app = api.exportedVariables.Loader.app;
 ```
 ### Getting API (Register Mod)
-The api variable is needed as it is the mods connection point to the game, without it your mod can do nothing.
-You will only need to register one mod function per mod.
-The api variable is used for registering your mod implementation (check below) and also is your link to everything outside the game environment (aka main menu, settings, user details, and more).
+The api variable is needed as it is the mods connection point to the game, without it your mod can do nothing. <br> You will only need to register one mod function per mod. <br> The api variable is used for registering your mod implementation (check below) and also is your link to everything outside the game environment (aka main menu, settings, user details, and more).
 ```javascript
 function myMod(api){
   console.log('I got the api!');
@@ -64,7 +57,7 @@ function myMod(api){
 window.registerMod(myMod);
 ```
 ### Register Mod Implementation
-Unlike when registering your mod to get the api (check above), your mod implementation will run everytime a game is started and will pass you the game variables through "root". Any mod that wants to interact with the game will need to register a mod implementation.
+Unlike when registering your mod to get the api (check above), your mod implementation will run everytime a game is started and will pass you the game variables through "root". <br> Any mod that wants to interact with the game will need to register a mod implementation.
 ```javascript
 function myMod(api){
   console.log('myMod is registered!');
@@ -75,3 +68,38 @@ function myMod(api){
 }
 window.registerMod(myMod);
 ```
+### Signals (Hook Functions To Game Events)
+Signals are an important tool to hook certain functions to ingame events and processes. <br> Signals allow you to execute a function to draw something on screen (for example) everytime the game wants to draw a frame.
+
+There are many signals : 
+**`aboutToDestruct
+consumerPrioManuallyChanged
+damageDispatched
+dayNightChanged
+entityAdded
+entityDestroyed
+entityGotNewComponent
+entityQueuedForDestroy
+fullGameResync
+gameOver
+gameRejectedFromServer
+gameRestored
+gameSaved
+gameSyncedWithServer
+mapThemeLoaded
+modDrawScreenSpace
+modDrawWorldSpace
+modUpdateTick
+newlyUnlockedBuildingsChanged
+performAsync
+postLoadHook
+readyToRender
+requireRoutingUpdate
+resized
+skillsChanged
+streetDestroyed
+streetPlaced
+structureDestroyed
+structureEnhanced
+structurePlaced
+structureUpgraded`**

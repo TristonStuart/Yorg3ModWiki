@@ -20,22 +20,13 @@ You are probably wondering how to host your mod file at that address. <br> You c
 Node.js File Server : https://github.com/TristonStuart/Yorg3-Mod-Tools/tree/master/Mod.js%20File%20Server%20(nodejs)/ (Recomended)
 
 Python File Server : https://github.com/tobspr/yorg.io-3-modding-docs/blob/master/sample_mod/mod_testing_server.py
-## [Mod Builder](https://github.com/TristonStuart/AdvancedModLoader/tree/master "Advanced Mod Loader (AML)")
-**[AML](https://github.com/TristonStuart/AdvancedModLoader/tree/master "AML") is a custom mod loader for the mod developers.**
+## [Mod Build](https://github.com/dengr1065/modbuild "Mod Build")
+**[Mod Build](https://github.com/dengr1065/modbuild "Mod Build") is a custom mod loader for mod developers.**
 
 **It can :**
 * Inject Multiple Mods At Once
-* Load Custom APIs
-* Includes Default APIs To Help With Mod Creation
-* Gives Debugging Tools For Mods
-* Log Mod And Game Data
-* Communicate With Other Mods (with included api)
-* Better Visual Representation Of Mods
-* Compatibility Checker For Mods
-* Combine Multiple Mods Into One File
-* Compile Mods And APIs Into Publishable Mod
 
-AML is specifically designed for mod developers, to help make the creation of mods easier. <br> AML has many features to help with easier creation of large and small mods but also has tools that allow 
+Mod Build is specifically designed for mod developers, to help make the creation of mods easier.
 ## Code Snippets / Examples
 ### Getting app
 The app var is important for editing anything outside of the game variables. <br> Getting it is different across released and beta (as of 10/25/19), so 2 methods are shown. <br> The api variable must be accessible.

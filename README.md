@@ -103,3 +103,10 @@ structureDestroyed
 structureEnhanced
 structurePlaced
 structureUpgraded`**
+
+Example of how to add a hook to a signal :
+```javascript
+root.signals.postLoadHook.add(function(){
+  console.log('Game has fully loaded!');
+});
+```

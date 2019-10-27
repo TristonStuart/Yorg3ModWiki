@@ -106,7 +106,7 @@ root.signals.postLoadHook.add(function(){
 ```
 ### About The Signals :
 #### aboutToDestruct
-Ran : Before playerBase is destroyed <br> Args : None
+Ran : Before Game Exits <br> Args : None
 #### consumerPrioManuallyChanged
 Ran : When building resource priority is changed <br> Args : [BuildingMeta]
 #### damageDispatched

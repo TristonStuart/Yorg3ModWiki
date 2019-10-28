@@ -108,43 +108,43 @@ root.signals.postLoadHook.add(function(){
 #### aboutToDestruct
 Ran : Before Game Exits <br> Args : None
 #### consumerPrioManuallyChanged
-Ran : When building resource priority is changed <br> Args : [BuildingMeta]
+Ran : When building resource priority is changed <br> Args : [Building]
 #### damageDispatched
-Ran : When Zombie Attacks Something <br> Args : [SpecificData (instaKill info), EntityMeta]
+Ran : When Zombie Attacks Something <br> Args : [DamageForm, Entity]
 #### dayNightChanged
 Ran : When day / night changes <br> Args : None
 #### entityAdded
-Ran : When an entity is created <br> Args : [EntityMeta]
+Ran : When an entity is created <br> Args : [Entity]
 #### entityDestroyed
-Ran : When an entity is destroyed <br> Args : [EntityMeta]
+Ran : When an entity is destroyed <br> Args : [Entity]
 #### entityGotNewComponent
-Ran : When an entity gets a new component <br> Args : [EntityMeta]
+Ran : When an entity gets a new component <br> Args : [Entity]
 #### entityQueuedForDestroy
-Ran : Before an entity is destroyed <br> Args : [EntityMeta]
+Ran : Before an entity is destroyed <br> Args : [Entity]
 #### fullGameResync
-Ran : (Not known - Might only be used in MP) <br> Args : Unknown
+Ran : In multiplayer when the server detected a simulation state mismatch, this resets the game to a previous point in time <br> Args : None
 #### gameOver
 Ran : When game ends <br> Args : None
 #### gameRejectedFromServer
-Ran : (Not known - Invalid sync token / anticheat or mods) <br> Args : Unknown
+Ran : When the server does not accept the savegame (Invalid sync token / anticheat or mods) <br> Args : None
 #### gameRestored
-Ran : When game is restored from sync <br> Args : None
+Ran : When game is restored (Called at the beginning when a savegame has been loaded)  <br> Args : None
 #### gameSaved
-Ran : (Not known) <br> Args : Unknown
+Ran : Unused <br> Args : None
 #### gameSyncedWithServer
-Ran : When game is synced with server <br> Args : None
+Ran : When game was successfully synced with server <br> Args : None
 #### mapThemeLoaded
 Ran : When map theme is fully loaded <br> Args : None
 #### modDrawScreenSpace
-Ran : Every frame <br> Args : [DrawParameters (Canvas - Mod Ui, Root, Zoom)]
+Ran : Every frame <br> Args : [DrawParameters (contains e.g. the Canvas, Root and Zoom)]
 #### modDrawWorldSpace
-Ran : When rendering at world space <br> Args : [DrawParameters (Canvas, Root, Zoom)]
+Ran : When rendering at world space <br> Args : [DrawParameters (contains e.g. the Canvas, Root and Zoom)]
 #### modUpdateTick
 Ran : Every tick <br> Args : None
 #### newlyUnlockedBuildingsChanged
-Ran : When new building is unlocked <br> Args : [SpecificDataArray (Building Name)]
+Ran : When new buildings are unlocked <br> Args : [Array<buildingId: string>]
 #### performAsync
-Ran : When the code needs to use async <br> Args : [CallBackFunction?, Name]
+Ran : When the code needs to use async methods, those will be executed after the current logic step <br> Args : [callback: function() : void, name?: string]
 #### postLoadHook
 Ran : After game is loaded <br> Args : None
 #### readyToRender
@@ -152,18 +152,18 @@ Ran : When game is ready to render <br> Args : None
 #### requireRoutingUpdate
 Ran : When game needs to make a routing update <br> Args : None
 #### resized
-Ran : When window is resized <br> Args : [Width, Height]
+Ran : When window is resized <br> Args : [width: number, height:number]
 #### skillsChanged
 Ran : When the skills are changed <br> Args : None
 #### streetDestroyed
-Ran : Never (There is nothing using this signal and it is never called) <br> Args : Unknown
+Ran : Unused <br> Args : [x, number, y:number]
 #### streetPlaced
-Ran : (Not known) <br> Args : Unknown
+Ran : When a new street was placed <br> Args : [x: number, y:number]
 #### structureDestroyed
-Ran : When a structure is destroyed <br> Args : [BuildingMeta]
+Ran : When a structure is destroyed <br> Args : [Building]
 #### structureEnhanced
-Ran : When a structure is enhanced (not upgraded) <br> Args : [EntityMeta]
+Ran : When a structure is enhanced (not upgraded) <br> Args : [Entity]
 #### structurePlaced
-Ran : When a structure is placed <br> Args : [BuildingMeta]
+Ran : When a structure is placed <br> Args : [Entity]
 #### structureUpgraded
-Ran : When a structure is upgraded <br> Args : [BuildingMeta, UpgradeMeta]
+Ran : When a structure is upgraded <br> Args : [Entity, Upgrade]
